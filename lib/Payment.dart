@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:tugasproject2/homepage.dart';
 
 
 void main() {
@@ -171,7 +172,12 @@ class HomeEdrik extends StatelessWidget {
                           alignment: Alignment.center,
                           minimumSize: Size(230, 45), //////// HERE
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => HomeAutoLux()),
+                          );
+                        },
                         child: Text('Beli Lagi'),
                       ),
                     ],

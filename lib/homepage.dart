@@ -191,6 +191,7 @@ class BottomNavItem extends StatelessWidget {
 class CategoryCard extends StatelessWidget {
   final String imgSrc;
   final String title;
+
   const CategoryCard({
     Key? key, required this.imgSrc, required this.title,
   }) : super(key: key);
@@ -208,6 +209,7 @@ class CategoryCard extends StatelessWidget {
           Image.asset(imgSrc),
           Spacer(),
           Text(title, style: TextStyle(fontSize: 12),)
+
         ],
       ),
     );

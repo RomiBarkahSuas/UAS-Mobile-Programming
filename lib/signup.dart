@@ -82,8 +82,10 @@ class _SignupPageState extends State<SignupPage> {
                         shadowColor: Colors.greenAccent,
                         color: Colors.green,
                         elevation: 7.0,
-                        child: GestureDetector(
-                          onTap: () {},
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.of(context).pop();
+                          },
                           child: Center(
                             child: Text(
                               'SIGNUP',
@@ -95,35 +97,6 @@ class _SignupPageState extends State<SignupPage> {
                           ),
                         ),
                       )),
-                  SizedBox(height: 20.0),
-                  Container(
-                    height: 40.0,
-                    color: Colors.transparent,
-                    child: Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(
-                              color: Colors.black,
-                              style: BorderStyle.solid,
-                              width: 1.0),
-                          color: Colors.transparent,
-                          borderRadius: BorderRadius.circular(20.0)),
-                      child: InkWell(
-                        onTap: () {
-                          Navigator.of(context).pop();
-                        },
-                        child:
-
-                        Center(
-                          child: Text('Go Back',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: 'Poppins')),
-                        ),
-
-
-                      ),
-                    ),
-                  ),
                 ],
               )),
           // SizedBox(height: 15.0),
