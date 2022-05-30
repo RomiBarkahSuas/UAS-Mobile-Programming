@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tugasproject2/homepage.dart';
-import 'signup.dart';
+import 'package:tugasproject2/signup.dart';
+import 'package:tugasproject2/form_pegawai.dart';
+import 'package:tugasproject2/list_pegawai_page.dart';
+
+
 
 
 void main() => runApp(new MyApp());
@@ -96,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           onTap: () {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => HomeAutoLux()),
+                              MaterialPageRoute(builder: (context) => ListPegawaiPage()),
                             );
                           },
                           child: Center(
@@ -154,7 +157,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 SizedBox(width: 5.0),
                 InkWell(
                   onTap: () {
-                    Navigator.of(context).pushNamed('/signup');
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => FormPegawai()));
                   },
                   child: Text(
                     'Register',
